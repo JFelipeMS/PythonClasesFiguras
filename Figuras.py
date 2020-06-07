@@ -47,7 +47,7 @@ class Cuadrilatero(Poligono):
         b = Linea(self.Vertices[1],self.Vertices[2]).getLongitud()
         c = Linea(self.Vertices[2],self.Vertices[3]).getLongitud()
         d = Linea(self.Vertices[3],self.Vertices[0]).getLongitud()
-        if a == b and a == b and a == c:
+        if a == b and a == c and a == d:
             return "Cuadrado"
         elif a == c and b == d:
             return "Rectangulo"
